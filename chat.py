@@ -45,3 +45,9 @@ def get_chat_response(messages, context):
         frequency_penalty=0.5,
         presence_penalty=0.5,
     )
+if __name__ == "__main__":
+    response = get_chat_response(
+        messages=[{"role": "user", "content": "what city has the best food in the world?"}],
+        context={"first_name": "Jessie", "last_name": "Irwin"},
+    )
+    print(response.choices[0].message.content)
