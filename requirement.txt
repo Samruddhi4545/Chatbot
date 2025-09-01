@@ -1,5 +1,5 @@
-langchain
-openai
-huggingface_hub
-python-dotenv
 streamlit
+langchain
+langchain-google-genai
+google-generativeai
+python-dotenv
